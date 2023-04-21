@@ -1,0 +1,63 @@
+SERVER:
+Listening for incoming UDP packets on port 41194
+Checksum Correct
+Received SYN, seq num reveived is 0
+Sent SYN-ACK packet
+Checksum Correct
+Received data packet with seq num 1
+Received 1004 bytes of data and sent ACK packet with ack num 2
+Checksum Correct
+Received duplicated packets. Dropping the packet
+Checksum Correct
+Received duplicated packets. Dropping the packet
+Checksum Correct
+Received data packet with seq num 2
+Received 1004 bytes of data and sent ACK packet with ack num 3
+Checksum Correct
+Received duplicated packets. Dropping the packet
+Checksum Correct
+Received data packet with seq num 3
+Received 1004 bytes of data and sent ACK packet with ack num 4
+Checksum Correct
+Received duplicated packets. Dropping the packet
+Checksum Correct
+Received data packet with seq num 4
+Checksum Correct
+Received FIN packet
+Sent FIN-ACK packet
+Sent FIN packet
+Connection closed. Terminating the program
+
+CLIENT:
+Sent SYN packet
+TIMEOUT value updated to  0.002796173095703125
+Received SYN-ACK packet
+Sent ACK packet
+Sent data packet
+Timeout waiting for ACK packet
+Sent data packet
+Timeout waiting for ACK packet
+Sent data packet
+TIMEOUT value updated to  0.0051670074462890625
+Received ACK packet
+Sent data packet
+Timeout waiting for ACK packet
+Sent data packet
+TIMEOUT value updated to  0.0057373046875
+Received ACK packet
+Sent data packet
+Timeout waiting for ACK packet
+Sent data packet
+TIMEOUT value updated to  0.005772590637207031
+Received ACK packet
+Sent data packet
+Timeout waiting for ACK packet
+Sent data packet
+TIMEOUT value updated to  0.02350616455078125
+Received ACK packet
+Sent FIN packet
+Timeout waiting for ACK packet
+Sent FIN packet
+Received FIN-ACK packet
+Received FIN packet
+Sent FIN-ACK packet

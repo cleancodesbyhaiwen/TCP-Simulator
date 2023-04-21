@@ -1,0 +1,19 @@
+Client:
+
+The client first send SYN and wait for SYN-ACK from the server.
+Then after sending ACK, starting sending packets of file data with size 1024 (with header)
+After sending each packet, waits for TIMEOUT value. If timeout, resend the packet.
+After receiving each ACK, the TIMEOUT gets recomputed using the algorithm from the lecture.
+Sequence number gets adds by 1 each time an ACK is received.
+Finally, after sending the whole file, sends FIN, waits for FIN-ACK. Waits for FIN and sends FIN-ACK.
+
+
+Server:
+
+The server first waits for SYN and send SYN-ACK and waits for data packets. 
+For every packet received, it checks the checksum, if checksum is incorrect, it will drop the packet.
+For every data packet received, it will check the sequence number to see whether it is a duplicated packet.
+This happens when the timeout value for the sender is too small so that it resend a poacket which has already been 
+received by the server.
+When a duplicated packet is seen, it will drop it.
+After receiving and writting the whole file, it will wait for FIN from client and send FIN-ACK. Then send FIN and waits for FIN-ACK.
